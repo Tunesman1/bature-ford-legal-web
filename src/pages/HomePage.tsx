@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Briefcase, Gavel, FileText, Users, BookOpen, FileSearch, Award, Shield, Scale } from 'lucide-react';
@@ -46,11 +47,11 @@ const HomePage: React.FC = () => {
 
   return (
     <div>
-      {/* Enhanced Hero Section with better styling */}
+      {/* Enhanced Hero Section with better styling and new image */}
       <section className="relative h-[90vh] overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-fixed"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')" }}
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1505663912202-ac22d4cb3707?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')" }}
         >
           <div className="absolute inset-0 bg-gradient-to-r from-lawfirm-charcoal/95 to-lawfirm-burgundy/90"></div>
         </div>
@@ -71,7 +72,7 @@ const HomePage: React.FC = () => {
                   </Button>
                 </Link>
                 <Link to="/about">
-                  <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/20 w-full sm:w-auto px-8 py-6 text-base font-semibold">
+                  <Button size="lg" variant="outline" className="border-2 border-white text-white bg-lawfirm-burgundy/40 hover:bg-white/20 w-full sm:w-auto px-8 py-6 text-base font-semibold">
                     About Our Firm
                   </Button>
                 </Link>

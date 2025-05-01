@@ -16,7 +16,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   
   // Scroll to top on route change
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   }, [location.pathname]);
   
   return (

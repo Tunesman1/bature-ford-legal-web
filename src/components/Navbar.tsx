@@ -24,16 +24,13 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between h-20">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center">
-              <div className="flex items-center">
-                <div className="bg-lawfirm-burgundy text-white p-1 mr-1">
-                  <span className="font-serif font-bold text-2xl md:text-3xl tracking-wider">B</span>
-                </div>
-                <div className="bg-lawfirm-burgundy text-white p-1">
-                  <span className="font-serif font-bold text-2xl md:text-3xl tracking-wider">F</span>
-                </div>
-              </div>
-              <div className="hidden md:block ml-4 border-l-2 border-lawfirm-burgundy pl-4">
-                <span className="font-serif text-lawfirm-charcoal text-xl">BATURE & FORD LP</span>
+              <img 
+                src="/lovable-uploads/2d50a29b-9cb6-49bd-84b8-0451218bdc2f.png" 
+                alt="Bature & Ford LP Logo" 
+                className="h-14 w-auto"
+              />
+              <div className="hidden md:block ml-2 pl-2">
+                <span className="font-serif text-lawfirm-charcoal text-xl font-bold">BATURE & FORD LP</span>
               </div>
             </Link>
           </div>
@@ -45,15 +42,16 @@ const Navbar: React.FC = () => {
                 <Link
                   key={link.name}
                   to={link.href}
-                  className="text-lawfirm-charcoal hover:text-lawfirm-burgundy px-3 py-2 text-sm font-medium transition duration-300"
+                  className="text-lawfirm-charcoal hover:text-lawfirm-burgundy px-3 py-2 text-sm font-medium transition duration-300 relative group"
                 >
                   {link.name}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-lawfirm-burgundy transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               ))}
             </div>
             <Link
               to="/contact"
-              className="ml-8 bg-lawfirm-burgundy hover:bg-lawfirm-burgundy-dark text-white px-4 py-2 rounded text-sm font-medium transition duration-300"
+              className="ml-8 bg-lawfirm-burgundy hover:bg-lawfirm-burgundy-dark text-white px-4 py-2 rounded text-sm font-medium transition duration-300 shadow-md hover:shadow-lg"
             >
               Free Consultation
             </Link>
@@ -94,7 +92,7 @@ const Navbar: React.FC = () => {
           ))}
           <Link
             to="/contact"
-            className="block w-full text-center mt-4 bg-lawfirm-burgundy hover:bg-lawfirm-burgundy-dark text-white px-4 py-2 rounded text-base font-medium transition duration-300"
+            className="block w-full text-center mt-4 bg-lawfirm-burgundy hover:bg-lawfirm-burgundy-dark text-white px-4 py-2 rounded text-base font-medium transition duration-300 shadow-md"
             onClick={() => setMobileMenuOpen(false)}
           >
             Free Consultation

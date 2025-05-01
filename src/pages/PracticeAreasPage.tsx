@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
@@ -144,11 +143,17 @@ const PracticeAreasPage: React.FC = () => {
 
   return (
     <div>
-      {/* Hero Section */}
-      <section className="bg-lawfirm-burgundy text-white py-16 md:py-24">
-        <div className="content-container">
+      {/* Enhanced Hero Section with image and overlay */}
+      <section className="relative py-16 md:py-24">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')" }}
+        >
+          <div className="absolute inset-0 bg-lawfirm-burgundy/90"></div>
+        </div>
+        <div className="content-container relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">Our Practice Areas</h1>
+            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-white">Our Practice Areas</h1>
             <p className="text-gray-100 text-lg">
               From traditional legal fields to cutting-edge digital technologies, our expertise spans diverse practice areas to meet your complex legal challenges.
             </p>

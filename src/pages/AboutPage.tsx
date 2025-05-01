@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -47,11 +46,17 @@ const AboutPage: React.FC = () => {
 
   return (
     <div>
-      {/* Hero Section */}
-      <section className="bg-lawfirm-charcoal text-white py-16 md:py-24">
-        <div className="content-container">
+      {/* Enhanced Hero Section with image and overlay */}
+      <section className="relative py-16 md:py-24">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')" }}
+        >
+          <div className="absolute inset-0 bg-lawfirm-charcoal/85"></div>
+        </div>
+        <div className="content-container relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">About Our Firm</h1>
+            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-white">About Our Firm</h1>
             <p className="text-gray-300 text-lg">
               Bature & Ford delivers high-level legal counsel to private clients, corporations, and government bodies. We combine discretion, precision, and strategic insight across complex legal matters.
             </p>

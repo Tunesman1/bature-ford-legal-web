@@ -48,11 +48,17 @@ const ContactPage: React.FC = () => {
 
   return (
     <div>
-      {/* Hero Section */}
-      <section className="bg-lawfirm-charcoal text-white py-16 md:py-24">
-        <div className="content-container">
+      {/* Enhanced Hero Section with image and overlay */}
+      <section className="relative py-16 md:py-24">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')" }}
+        >
+          <div className="absolute inset-0 bg-lawfirm-charcoal/90"></div>
+        </div>
+        <div className="content-container relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">Contact Us</h1>
+            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-white">Contact Us</h1>
             <p className="text-gray-300 text-lg">
               Get in touch with our team of legal professionals for expert assistance with your legal needs.
             </p>
@@ -228,9 +234,26 @@ const ContactPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Map Section (Placeholder) */}
-      <section className="h-96 bg-gray-200 flex items-center justify-center">
-        <p className="text-gray-600">Map Integration Placeholder</p>
+      {/* Map Section with Google Maps iframe */}
+      <section className="bg-gray-50 py-16">
+        <div className="content-container">
+          <h2 className="section-title text-center mb-10">Our Location</h2>
+          <div className="rounded-lg overflow-hidden shadow-xl border-4 border-white">
+            <div className="relative w-full h-96">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d504528.75276527595!2d6.9223735176272045!3d8.913865333716934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e6157ce3eeda9%3A0x32af1c368be32dfc!2sFederal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1746108323802!5m2!1sen!2sng" 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                className="absolute inset-0"
+                title="Bature & Ford LP Location"
+              ></iframe>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );

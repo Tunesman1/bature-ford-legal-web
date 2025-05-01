@@ -12,14 +12,13 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Column 1 - Logo and About */}
           <div className="col-span-1 md:col-span-1">
-            <div className="flex items-center mb-4">
-              <div className="bg-white mr-2">
-                <span className="font-serif font-bold text-2xl text-lawfirm-burgundy px-1">B</span>
-              </div>
-              <div className="bg-white">
-                <span className="font-serif font-bold text-2xl text-lawfirm-burgundy px-1">F</span>
-              </div>
-            </div>
+            <Link to="/" className="block mb-4">
+              <img 
+                src="/lovable-uploads/2d50a29b-9cb6-49bd-84b8-0451218bdc2f.png" 
+                alt="Bature & Ford LP Logo" 
+                className="h-16 w-auto"
+              />
+            </Link>
             <p className="text-sm text-gray-300 mb-4">
               Delivering high-level legal counsel to private clients, corporations, and government bodies with discretion and strategic insight.
             </p>

@@ -84,18 +84,18 @@ const Footer: React.FC = () => {
             <div className="space-y-3">
               <div className="flex items-start">
                 <Home size={18} className="mr-2 mt-1 text-lawfirm-gold" />
-                <p className="text-sm text-gray-300">123 Legal Avenue, City Center, Lagos, Nigeria</p>
+                <p className="text-sm text-gray-300">B25, Harmony Estate, Galadimawa, Abuja</p>
               </div>
               <div className="flex items-center">
                 <Phone size={18} className="mr-2 text-lawfirm-gold" />
-                <a href="tel:+234-123-456-7890" className="text-sm text-gray-300 hover:text-lawfirm-gold transition duration-300">
-                  +234 123 456 7890
+                <a href="tel:09164228003" className="text-sm text-gray-300 hover:text-lawfirm-gold transition duration-300">
+                  09164228003
                 </a>
               </div>
               <div className="flex items-center">
                 <Mail size={18} className="mr-2 text-lawfirm-gold" />
-                <a href="mailto:info@batureford.com" className="text-sm text-gray-300 hover:text-lawfirm-gold transition duration-300">
-                  info@batureford.com
+                <a href="mailto:batureandfordlp@gmail.com" className="text-sm text-gray-300 hover:text-lawfirm-gold transition duration-300">
+                  batureandfordlp@gmail.com
                 </a>
               </div>
             </div>

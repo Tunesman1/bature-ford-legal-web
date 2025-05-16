@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -6,10 +7,10 @@ import { Card, CardContent } from '@/components/ui/card';
 const AboutPage: React.FC = () => {
   const teamMembers = [
     {
-      name: "Bature Ibrahim Inuolaji, Esq.",
+      name: "Bature Ibrahim, Esq.",
       role: "Principal Partner",
       image: "/placeholder.svg",
-      bio: "With over 15 years of legal experience, Bature leads our firm with expertise in corporate law, litigation, and digital asset regulation. His strategic approach has guided numerous high-profile cases to success."
+      bio: "Bature Ibrahim, highly experienced, leads our firm with expertise in corporate law, litigation, and digital asset regulation. His strategic approach has guided numerous high-profile cases to success."
     },
     {
       name: "Adamu Khalifah, Esq.",
@@ -58,7 +59,7 @@ const AboutPage: React.FC = () => {
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-white">About Our Firm</h1>
             <p className="text-gray-300 text-lg">
-              Bature & Ford delivers high-level legal counsel to private clients, corporations, and government bodies. We combine discretion, precision, and strategic insight across complex legal matters.
+              Bature & Ford LP delivers high-level legal counsel to private clients, corporations, and government bodies. We combine discretion, precision, and strategic insight across complex legal matters.
             </p>
           </div>
         </div>
@@ -71,7 +72,7 @@ const AboutPage: React.FC = () => {
             <div>
               <h2 className="section-title">Our Story</h2>
               <p className="text-gray-700 mb-4">
-                Founded with a vision to bridge traditional legal expertise with emerging digital technologies, Bature & Ford has established itself as a forward-thinking law firm dedicated to excellence in legal practice.
+                Founded with a vision to bridge traditional legal expertise with emerging digital technologies, Bature & Ford LP has established itself as a forward-thinking law firm dedicated to excellence in legal practice.
               </p>
               <p className="text-gray-700 mb-4">
                 Our journey began with a commitment to providing comprehensive legal services across conventional areas while developing specialized expertise in cryptocurrency, blockchain, and digital asset regulation.
@@ -130,7 +131,7 @@ const AboutPage: React.FC = () => {
       <section className="py-16 md:py-24">
         <div className="content-container">
           <div className="text-center mb-12">
-            <h2 className="section-title">Why Choose Bature & Ford</h2>
+            <h2 className="section-title">Why Choose Bature & Ford LP</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Our commitment to excellence and client satisfaction sets us apart from other law firms.
             </p>

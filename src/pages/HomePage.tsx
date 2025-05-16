@@ -29,7 +29,7 @@ const HomePage: React.FC = () => {
 
   const testimonials = [
     {
-      text: "Bature & Ford provided exceptional guidance through a complex litigation case. Their strategic thinking and attention to detail were invaluable.",
+      text: "Bature & Ford LP provided exceptional guidance through a complex litigation case. Their strategic thinking and attention to detail were invaluable.",
       author: "Sarah Johnson",
       position: "CEO, Tech Innovations Ltd"
     },
@@ -63,7 +63,7 @@ const HomePage: React.FC = () => {
                 Strategic Legal <span className="text-lawfirm-gold">Solutions</span> for Complex Challenges
               </h1>
               <p className="text-lg md:text-xl mb-8 text-gray-100">
-                Bature & Ford delivers high-level legal counsel blending traditional expertise with cutting-edge knowledge in digital technologies.
+                Bature & Ford LP delivers high-level legal counsel blending traditional expertise with cutting-edge knowledge in digital technologies.
               </p>
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                 <Link to="/contact">
@@ -92,7 +92,7 @@ const HomePage: React.FC = () => {
             <div>
               <h2 className="section-title text-5xl mb-6">A Modern Firm with Traditional Values</h2>
               <p className="mb-6 text-gray-700 text-lg">
-                At Bature & Ford, we combine traditional legal expertise with specialized knowledge in emerging digital fields. Our team delivers tailored legal strategies across conventional and innovative practice areas.
+                At Bature & Ford LP, we combine traditional legal expertise with specialized knowledge in emerging digital fields. Our team delivers tailored legal strategies across conventional and innovative practice areas.
               </p>
               <p className="mb-6 text-gray-700 text-lg">
                 We pride ourselves on our ability to anticipate challenges, provide clear guidance, and deliver results for clients ranging from individuals to multinational corporations and government bodies.
@@ -177,7 +177,7 @@ const HomePage: React.FC = () => {
       <section className="py-20 md:py-28 bg-gray-50">
         <div className="content-container">
           <div className="text-center mb-16">
-            <h2 className="section-title text-5xl">Why Choose Bature & Ford</h2>
+            <h2 className="section-title text-5xl">Why Choose Bature & Ford LP</h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-lg">
               Our commitment to excellence sets us apart as a leading legal firm.
             </p>
